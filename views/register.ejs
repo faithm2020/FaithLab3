@@ -1,0 +1,22 @@
+<%- include('header'); -%>
+ <form action="/api/register" method="POST" >
+  <label for="name">Name:</label><br>
+  <input type="text" id="name" name="name"><br>
+  <label for="username">Username:</label><br>
+  <input type="text" id="username" name="username"><br>
+  <label for="pwd">Password:</label><br>
+  <input type="password" id="pwd" name="pwd"><br>
+
+  <label for="phone">Phone:</label><br>
+  <input type="tel" id="phone" name="phone"  pattern="[0-9]{10}" required><br>
+  
+  <label for="address">Address:</label><br>
+  <input type="text" id="address" name="address"><br>
+  <label for="city">City:</label><br>
+  <input type="text" id="city" name="city"><br>
+  <label for="zip">Zip:</label><br>
+  <input type="number" id="zip" name="zip"  pattern="[0-9]{3}" required><br><br>
+  
+  <input type="submit" value="Submit">
+</form>
+<%- include('footer'); -%>
